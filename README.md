@@ -4,7 +4,8 @@ Get you data under control.
 
 ## TODO
 
-- [ ] How will connections work?
-- [ ] Test-SqlTools
+- [ ] Feature | DacPac diff (test-dwDacPac -Source -Target)
+- [ ] Spike | How will connections work?
+- [ ] Spike | Test-SqlTools
 
 ## Issues
