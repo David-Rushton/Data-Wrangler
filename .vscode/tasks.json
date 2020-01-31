@@ -4,9 +4,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Refresh Data Wrangler",
+            "label": "Build Data Wrangler",
             "type": "shell",
-            "command": "Import-Module -Name ${workspaceFolder}/DataWrangler -Force"
+            "command": "Import-Module -Name ${workspaceFolder}/DataWrangler -Force -Verbose",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/DataWrangler"
+            }
         }
     ]
 }

@@ -7,7 +7,7 @@
         {
             "name": "PowerShell Interactive Session",
             "type": "PowerShell",
-            "preLaunchTask": "Import Data Wrangler",
+            "preLaunchTask": "Build Data Wrangler",
             "request": "launch",
             "cwd": "${workspaceFolder}"
         }
