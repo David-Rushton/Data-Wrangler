@@ -4,13 +4,15 @@
 
 Set-StrictMode -Version 'Latest'
 
-
+#$MyInvocation.
 # Used to import module files
-$private   = @(Get-ChildItem -Path ([System.IO.Path]::Combine($PSScriptRoot, 'Private')))
-$public    = @(Get-ChildItem -Path ([System.IO.Path]::Combine($PSScriptRoot, 'Public')))
+$private    = Join-Path -Path $PSScriptRoot -ChildPath 'Private'
+$public     = Join-Path -Path $PSScriptRoot -ChildPath 'Public'
 
-foreach($import in @($private, $public)) {
-    . $import.FullName
+foreach($location in @($private, $public)) {
+    foreach($import in (Get-ChildItem -Path $location)) {
+        . $import.FullName
+    }
 }
 
 
