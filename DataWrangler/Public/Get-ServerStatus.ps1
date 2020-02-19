@@ -6,5 +6,9 @@ function Get-ServerStatus {
 
     )
 
+    # CPU
+    # RAM
+    # BLOCKS
+    # ETC
 
 }

@@ -1,4 +1,4 @@
-
+function Test-DacPac {
 
 ## PUBLISH [+ PROFILE] TO COPY DB FROM PROD TO LOCAL?
 ## https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#help-for-the-extract-action
@@ -54,3 +54,4 @@ $stream.Close()
 $zip.Dispose()
 
 #>
+}
